@@ -18,28 +18,28 @@ import javax.persistence.TemporalType;
 public class Usuario implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_Usuario ;
-    private String nombre_Usuario;
-    private String barrio;
-    private String domicilio;
-    private String telefono;
+    private int id_Usuario; //Clave identificatoria
+    private String nombre_Usuario; //Apellido y nombre del Usuario
+    private String barrio; //3 barrios de Chacras de Mendoza
+    private String domicilio; //Domicilio exacto
+    private String telefono; 
     private String email;
     private String password;
     
     @Enumerated(EnumType.STRING)
-    private Rol rol;
+    private Rol rol; //Rol en la aplicación:USER, PROVEEDOR, ADMIN  
     
     @Temporal(TemporalType.DATE)
-    private Date fecha_alta;
+    private Date fecha_alta; //Fecha de registro
     @Temporal(TemporalType.DATE)
-    private Date fecha_baja;
+    private Date fecha_baja; //Fecha de cancelación del registro
     
-    private Boolean baja;
+    private Boolean baja; //Por defecto False hasta que el Admin lo acepte
 
     public Usuario() {
     }
 
-    public Usuario(int id_Usuario, String nombre_Usuario, String barrio, String domicilio, String telefono, String email, String password, Rol rol, Date fecha_alta, Date fecha_baja, Boolean baja) {
+    public Usuario(int id, String nombre_Usuario, String barrio, String domicilio, String telefono, String email, String password, Rol rol, Date fecha_alta, Date fecha_baja, Boolean baja) {
         this.id_Usuario = id_Usuario;
         this.nombre_Usuario = nombre_Usuario;
         this.barrio = barrio;
