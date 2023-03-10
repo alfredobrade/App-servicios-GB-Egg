@@ -28,7 +28,7 @@ public class Servicio {
     private char tipo_Servicio; //0-aceptado, 1-finalizado, 3-cancelado
 
     @ManyToOne
-    private User id_User; //Muchos servicios para un usuario/cliente
+    private Cliente id_Cliente; //Muchos servicios para un usuario/cliente
 
     private Proveedor id_Prov;  //
     private char puntaje_calif; //cantidad de estrellas que se califica
