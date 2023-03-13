@@ -71,8 +71,8 @@
   margin-top: -7px;
 }
 .navbar .nav-links {
-  display: inline;
-  float: right;
+  display: contents;
+
   font-size: 15px;
 }
 
@@ -107,7 +107,6 @@
   /*Icono Hamburguesa*/
   .navbar .nav-btn label {
     display: inline-block;
-
     width: 80px;
     height: 70px;
     padding: 25px;
@@ -145,6 +144,9 @@
   }
   .navbar .nav-links a {
     display: block;
+  }
+  .contenedor__todo {
+    padding-top: 220px;
   }
 
   /* when nav toggle button not checked */
@@ -240,7 +242,7 @@ main {
   max-width: 800px;
   margin: auto;
   margin-top: -950px;
-  position: relative;
+
   text-align: center;
   justify-content: center;
 }
@@ -410,13 +412,6 @@ main {
 @media screen and (max-width: 850px) {
   main {
     margin-top: 50px;
-  }
-
-  .img_body_fondo {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 50%;
   }
 
   .caja__trasera {
