@@ -29,7 +29,7 @@
           <!-- Navbar items -->          
           <div class="nav-links">            
             <a href="index.html">Inicio</a>
-            <a href="#">Nosotros</a>
+            <a href="#sobremi">Nosotros</a>
             <!-- Dropdown menu -->
             <div class="dropdown">
               <a class="dropBtn" href="#"
@@ -81,7 +81,17 @@
                         <input type="text" placeholder="Nombre y Apellido completo">                        
                         <input type="text" placeholder="Correo Electronico">                                               
                         <input type="password" placeholder="Contraseña"> 
+                        
                         <div class="formulario__login">
+                          
+                    <!--Cargar foto-->
+                    <div class="formulario__login">
+                      <!--<label class="custom-file-label" for="customFile">Elige una foto</label>-->
+                      <input type="file" class="formulario__login" id="customFile">
+                            
+                    </div>      
+                          
+                    <!--Tipo de profesion-->
                             <input type="text"  for="exampleFormControlSelect1" placeholder="Profesión">                            
                             <select class="formulario__login" id="exampleFormControlSelect1">
                               <option>Electricista</option>
@@ -91,6 +101,8 @@
                               <option>Plomero</option>                              
                             </select>
                           </div>
+                          
+                    <!--Años de experiencia-->
                           <div class="formulario__login">
                             <input type="text"  for="exampleFormControlSelect2" placeholder="Años de Experiencia">                            
                             <select  class="formulario__login" id="exampleFormControlSelect2">
@@ -99,12 +111,18 @@
                               <option>5 o más años</option>
                             </select>
                           </div>
+                          
+                    <!--Descripcion del trabajo-->
                           <div class="formulario__login">
                             <input type="text"  for="exampleFormControlSelect1" placeholder="Epecialización">                            
                             <textarea class="formulario__login" id="exampleFormControlTextarea2" rows="4" placeholder=" Descripcion del trabajo"></textarea>
                         </div>
+                        
+                    <!--Terminos y condiciones-->
                         <br><p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones.</a></p> 
-                        <input type="checkbox" id="cbox1" value="first_checkbox">                       
+                        <input type="checkbox" id="cbox1" value="first_checkbox"> 
+                        
+                    <!--Boton-->                      
                         <button>Regístrarse</button>
                     </form>
                 </div>

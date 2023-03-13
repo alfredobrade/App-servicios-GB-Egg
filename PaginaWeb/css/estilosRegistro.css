@@ -41,6 +41,8 @@
   grid-template-areas:
     "nav"
     "content";
+  position: fixed;
+  width: 100%;
 }
 
 .nav__logo {
@@ -368,9 +370,53 @@ main {
   display: none;
 }
 
+/*.custom-file-label {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: none;
+  background: #f2f2f2;
+  font-size: 16px;
+  display: flex;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  background: #46a2fd;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  justify-content: center;
+}*/
+
+#customFile {
+  width: 100%;
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  border: none;
+  background: #3a96f1;
+  font-size: 14px;
+  display: flex;
+  border-radius: 12px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
 @media screen and (max-width: 850px) {
   main {
     margin-top: 50px;
+  }
+
+  .img_body_fondo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 50%;
   }
 
   .caja__trasera {
