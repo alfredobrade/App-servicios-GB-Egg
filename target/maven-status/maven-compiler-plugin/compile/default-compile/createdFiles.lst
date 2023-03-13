@@ -1,0 +1,7 @@
+com\appservicios\appservicios\enums\Rol.class
+com\appservicios\appservicios\entidades\Rubro.class
+com\appservicios\appservicios\entidades\Servicio.class
+com\appservicios\appservicios\entidades\Administrador.class
+com\appservicios\appservicios\entidades\Proveedor.class
+com\appservicios\appservicios\entidades\User.class
+com\appservicios\appservicios\entidades\Usuario.class
