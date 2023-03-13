@@ -412,12 +412,7 @@ main {
     margin-top: 50px;
   }
 
-  .img_body_fondo {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 50%;
-  }
+  
 
   .caja__trasera {
     max-width: 350px;
