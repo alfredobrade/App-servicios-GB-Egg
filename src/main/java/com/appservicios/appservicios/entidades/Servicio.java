@@ -37,14 +37,14 @@ public class Servicio {
     public Servicio() {
     }
 
-    public Servicio(int id_Servicio, Rubro id_Rubro, String descripcion_Servicio, Date fecha_Inicio_Servicio, Date fecha_fin_Servicio, char tipo_Servicio, User id_User, Proveedor id_Prov, char puntaje_calif, String resenia_calif) {
+    public Servicio(int id_Servicio, Rubro id_Rubro, String descripcion_Servicio, Date fecha_Inicio_Servicio, Date fecha_fin_Servicio, char tipo_Servicio, Cliente id_Cliente, Proveedor id_Prov, char puntaje_calif, String resenia_calif) {
         this.id_Servicio = id_Servicio;
         this.id_Rubro = id_Rubro;
         this.descripcion_Servicio = descripcion_Servicio;
         this.fecha_Inicio_Servicio = fecha_Inicio_Servicio;
         this.fecha_fin_Servicio = fecha_fin_Servicio;
         this.tipo_Servicio = tipo_Servicio;
-        this.id_User = id_User;
+        this.id_Cliente = id_Cliente;
         this.id_Prov = id_Prov;
         this.puntaje_calif = puntaje_calif;
         this.resenia_calif = resenia_calif;
@@ -98,12 +98,12 @@ public class Servicio {
         this.tipo_Servicio = tipo_Servicio;
     }
 
-    public User getId_User() {
-        return id_User;
+    public Cliente getId_Cliente() {
+        return id_Cliente;
     }
 
-    public void setId_User(User id_User) {
-        this.id_User = id_User;
+    public void setId_User(Cliente id_Cliente) {
+        this.id_Cliente = id_Cliente;
     }
 
     public Proveedor getId_Prov() {
