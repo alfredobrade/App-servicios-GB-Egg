@@ -33,11 +33,12 @@ public class Servicio {
     private Proveedor id_Prov;  //
     private char puntaje_calif; //cantidad de estrellas que se califica
     private String resenia_calif; //Comentario del usuario que califica
+    private char acepta_resenia; // por defecto se carga false (0) o sea para no mostrar, el Administrador cambia a true(1) para que se vea
 
     public Servicio() {
     }
 
-    public Servicio(int id_Servicio, Rubro id_Rubro, String descripcion_Servicio, Date fecha_Inicio_Servicio, Date fecha_fin_Servicio, char tipo_Servicio, Cliente id_Cliente, Proveedor id_Prov, char puntaje_calif, String resenia_calif) {
+    public Servicio(int id_Servicio, Rubro id_Rubro, String descripcion_Servicio, Date fecha_Inicio_Servicio, Date fecha_fin_Servicio, char tipo_Servicio, Cliente id_Cliente, Proveedor id_Prov, char puntaje_calif, String resenia_calif, char acepta_resenia) {
         this.id_Servicio = id_Servicio;
         this.id_Rubro = id_Rubro;
         this.descripcion_Servicio = descripcion_Servicio;
@@ -48,6 +49,7 @@ public class Servicio {
         this.id_Prov = id_Prov;
         this.puntaje_calif = puntaje_calif;
         this.resenia_calif = resenia_calif;
+        this.acepta_resenia = acepta_resenia;
     }
 
     public int getId_Servicio() {
@@ -101,7 +103,7 @@ public class Servicio {
     public Cliente getId_Cliente() {
         return id_Cliente;
     }
-
+    
     public void setId_Cliente(Cliente id_Cliente) {
         this.id_Cliente = id_Cliente;
     }
@@ -129,14 +131,13 @@ public class Servicio {
     public void setResenia_calif(String resenia_calif) {
         this.resenia_calif = resenia_calif;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
+    public char getAcepta_resenia() {
+        return acepta_resenia;
+    }
+
+    public void setAcepta_resenia(char acepta_resenia) {
+        this.acepta_resenia = acepta_resenia;
+    }
+    
 }
